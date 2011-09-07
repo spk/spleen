@@ -7,12 +7,12 @@ In your ratable models:
     extend Spleen
     spleen(:dependent => :destroy)
 
-Add your Rateable types in app/models/ratings.rb:
+Add your Rateable types in app/models/rating.rb:
   RATEABLE_TYPES = %w{SomeRateableClass}
 
 By default the ratetor is User, you can add some or edit in the same file.
 
-Examples:
+Usage:
 
     a = Article.create(:title => 'test')
     a.rate(1, User.last)
