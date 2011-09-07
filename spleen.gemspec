@@ -1,8 +1,9 @@
 # encoding: UTF-8
+require './lib/spleen'
 
 Gem::Specification.new do |s|
   s.name = "spleen"
-  s.version = '0.0.1'
+  s.version = Spleen::VERSION
   s.platform = Gem::Platform::RUBY
   s.summary = "Ratings solution for Rails"
   s.email = "laurent@spkdev.net"

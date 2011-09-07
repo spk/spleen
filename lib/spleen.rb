@@ -1,5 +1,8 @@
 # encoding: UTF-8
 module Spleen
+
+  VERSION = '0.0.2'
+
   def self.extended(model_class)
     model_class.instance_eval do
       extend Base
