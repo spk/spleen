@@ -1,6 +1,4 @@
 # encoding: UTF-8
-require 'rails'
-
 module Spleen
   def self.extended(model_class)
     model_class.instance_eval do

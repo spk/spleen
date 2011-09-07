@@ -20,6 +20,10 @@ Usage:
     a.sum_rate # => 1
     a.count_rate # => 1
 
+# Tests
+
+    bundle exec ruby test/*_test.rb
+
 # TODO
 
 * tests
