@@ -1,11 +1,8 @@
 # encoding: UTF-8
-$: << File.expand_path("../../lib", __FILE__)
-$: << File.expand_path("../", __FILE__)
-$:.uniq!
 require 'minitest/autorun'
 require 'active_record'
 
-require 'spleen'
+require File.expand_path('../../lib/spleen', __FILE__)
 
 # If you want to see the ActiveRecord log, invoke the tests using `rake test LOG=true`
 if ENV["LOG"]
