@@ -11,7 +11,7 @@ module Spleen
       class_option :orm
 
       def copy_locale
-        copy_file "../../../../config/locales/en.yml", "config/locales/ratings.en.yml"
+        copy_file "locales.en.yml", "config/locales/ratings.en.yml"
       end
 
       def copy_model
