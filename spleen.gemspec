@@ -10,6 +10,11 @@ Gem::Specification.new do |s|
   s.description = "Ratings model solution for Rails"
   s.authors = ['Laurent Arnoud']
 
+  s.add_development_dependency "activerecord", "~> 3.1"
+  s.add_development_dependency "sqlite3", "~> 1.3"
+  s.add_development_dependency "minitest", "~> 2.4.0"
+  s.add_development_dependency "i18n", "~> 0.6.0"
+
   s.files = `git ls-files`.split("\n")
   #s.test_files = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.require_paths = ["lib"]
