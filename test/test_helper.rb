@@ -18,7 +18,7 @@ ActiveRecord::Migration.verbose = false
 require 'generators/spleen/templates/migration'
 CreateRatings.up
 
-%w{articles}.each do |table_name|
+%w{articles users}.each do |table_name|
   ActiveRecord::Migration.create_table table_name do |t|
     t.string :name
     t.boolean :active
